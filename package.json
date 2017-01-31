@@ -8,7 +8,9 @@
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
     "babel-jest": "^18.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-polyfill": "^6.22.0",
