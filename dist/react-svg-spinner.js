@@ -100,14 +100,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function speedSwitch(speed) {
-  switch (speed) {
-    case "fast":
-      return 600;
-    case "slow":
-      return 900;
-    default:
-      return 750;
-  }
+  if (speed === "fast") return 600;
+  if (speed === "slow") return 900;
+  return 750;
 }
 
 var Spinner = function Spinner(_ref) {
@@ -120,6 +115,7 @@ var Spinner = function Spinner(_ref) {
   return _react2.default.createElement(
     "svg",
     _extends({}, props, {
+      style: { animationDuration: speedSwitch(speed) + "ms" },
       className: "__react-svg-spinner_circle",
       role: "img",
       "aria-labelledby": "title desc",
@@ -135,7 +131,7 @@ var Spinner = function Spinner(_ref) {
       { id: "desc" },
       "Image of a partial circle indicating \"loading.\""
     ),
-    _react2.default.createElement("style", { dangerouslySetInnerHTML: { __html: "\n      .__react-svg-spinner_circle{\n          transition-property: transform;\n          animation-name: __react-svg-spinner_infinite-spin;\n          animation-duration: " + speedSwitch(speed) + "ms;\n          animation-iteration-count: infinite;\n          animation-timing-function: linear;\n      }\n      @keyframes __react-svg-spinner_infinite-spin {\n          from {transform: rotate(0deg)}\n          to {transform: rotate(360deg)}\n      }\n    " } }),
+    _react2.default.createElement("style", { dangerouslySetInnerHTML: { __html: "\n      .__react-svg-spinner_circle{\n          transition-property: transform;\n          animation-name: __react-svg-spinner_infinite-spin;\n          animation-iteration-count: infinite;\n          animation-timing-function: linear;\n      }\n      @keyframes __react-svg-spinner_infinite-spin {\n          from {transform: rotate(0deg)}\n          to {transform: rotate(360deg)}\n      }\n    " } }),
     _react2.default.createElement("circle", {
       role: "presentation",
       cx: 16,
@@ -144,7 +140,7 @@ var Spinner = function Spinner(_ref) {
       stroke: color,
       fill: "none",
       strokeWidth: thickness,
-      strokeDasharray: 2 * Math.PI * gap,
+      strokeDasharray: Math.PI * 2 * (10 - gap + thickness / 2),
       strokeLinecap: "round"
     })
   );
@@ -152,12 +148,12 @@ var Spinner = function Spinner(_ref) {
 Spinner.propTypes = {
   color: _react2.default.PropTypes.string,
   thickness: _react2.default.PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]).isRequired,
-  gap: _react2.default.PropTypes.oneOf([6, 7, 8, 9]).isRequired,
+  gap: _react2.default.PropTypes.oneOf([1, 2, 3, 4]).isRequired,
   speed: _react2.default.PropTypes.oneOf(["fast", "slow"])
 };
 Spinner.defaultProps = {
   color: "rgba(0,0,0,0.4)",
-  gap: 6,
+  gap: 4,
   thickness: 4
 };
 

@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "webpack"
+    "prepublish": "webpack",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
@@ -14,6 +16,7 @@
   },
   "peerDependencies": {},
   "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
     "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
