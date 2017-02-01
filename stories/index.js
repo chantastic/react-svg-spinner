@@ -28,6 +28,33 @@ const CodeExample = ({ children, ...props }) =>
 	</pre>
 
 storiesOf('Spinner', module)
+  .add('install', () => (
+		<Section>
+		  <h2>install</h2>
+			<p>There is a `commonjs` bundle and a `umd` for convenience.</p>
+
+		  <h3>install via npm</h3>
+      <CodeBlock>
+			  <CodeExample>{`npm i -S react-svg-spinner`}</CodeExample>
+			  <CodeExample>{`# or use your NPM client of choice.`}</CodeExample>
+      </CodeBlock>
+
+      <CodeBlock>
+			  <CodeExample>{`import Spinner from "react-svg-spinner";
+
+// or
+
+const Spinner = require("react-svg-spinner");
+`}
+        </CodeExample>
+      </CodeBlock>
+
+		  <h3>use in the browser</h3>
+      <CodeBlock>
+			  <CodeExample>{`<script src="https://unpkg.com/react-svg-spinner@0.1.0"></script>`}</CodeExample>
+      </CodeBlock>
+		</Section>
+  ))
   .add('default', () => (
 		<Section>
 		  <h2>Defaults</h2>
