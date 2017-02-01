@@ -2,16 +2,20 @@
   "name": "react-svg-spinner",
   "version": "0.0.1",
   "description": "An SVG spinner component.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "webpack"
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "webpack": "^2.2.1"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "babel-jest": "^18.0.0",
+    "babel-loader": "^6.2.10",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-polyfill": "^6.22.0",
     "babel-preset-latest": "^6.22.0",

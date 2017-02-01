@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function speedSwitch(speed) {
   switch (speed) {
@@ -64,4 +64,4 @@ Spinner.defaultProps = {
   thickness: 4,
 }
 
-export default Spinner
+module.exports = Spinner
