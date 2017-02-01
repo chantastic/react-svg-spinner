@@ -8,148 +8,136 @@ const CodeExample = ({ children, ...props }) =>
 	</pre>
 
 storiesOf('Spinner', module)
-  .add('no props', () => (
-		<div>
+  .add('default', () => (
+		<section>
+		  <h2>Defaults</h2>
+			<p><code>react-svg-spinner</code> is a small, self-spinning SVG.</p>
+
 		  <CodeExample>{`
 <Spinner />
 			`}</CodeExample>
 
 		  <Spinner />
-		</div>
+		</section>
   ))
-  .add('height/width', () => (
-		<div>
+  .add('prop: size', () => (
+		<section>
+		  <h2><code>size</code></h2>
+			<p><code>size</code> is a shorthand for setting <code>height</code> and <code>width</code> similtaniously.</p>
+
 		  <CodeExample>{`
-<Spinner
-  height="64"
-  width="64"
-/>
+<Spinner size="64px" />
 			`}</CodeExample>
 
-		  <Spinner
-			  height="64"
-			  width="64"
-			/>
-		</div>
+		  <Spinner size="64px" />
+
+			<p><code>height</code> and <code>width</code> can be set independantly as well.</p>
+
+		  <CodeExample>{`
+<Spinner height="64px" width="64px" />
+			`}</CodeExample>
+
+		  <Spinner height="64px" width="64px" />
+		</section>
   ))
-  .add('height/width className', () => (
-		<div>
-		  <style>{`
-				.s-8{height: 64px; width: 64px}
-			`}</style>
+  .add('prop: color', () => (
+		<section>
+		  <h2><code>color</code></h2>
+			<p><code>color</code> sets the color of the spinner. (big surprises, people.)</p>
+
 		  <CodeExample>{`
-<Spinner className="s-8" />
+<Spinner color="fuchsia" />
 			`}</CodeExample>
 
-		  <Spinner
-			  height="64"
-			  width="64"
-			/>
-		</div>
+		  <Spinner color="fuchsia" />
+		</section>
   ))
-  .add('color', () => (
-		<div>
-		  <CodeExample>{`
-<Spinner
-  height="64"
-  width="64"
-  color="fuchsia"
-/>
-			`}</CodeExample>
+  .add('prop: thickness', () => (
+		<section>
+		  <h2><code>thickness</code></h2>
+			<p><code>thickness</code> sets the thickness of your spinner.</p>
+			<p>This <strong>does not</strong> map to any absolute value. It is relative to the SVG size</p>
 
-		  <Spinner
-			  height="64"
-			  width="64"
-				color="fuchsia"
-			/>
-		</div>
+		  <CodeExample>{`
+<Spinner thickness={1} />
+			`}</CodeExample>
+		  <Spinner thickness={1} />
+
+		  <CodeExample>{`
+<Spinner thickness={2} />
+			`}</CodeExample>
+		  <Spinner thickness={2} />
+
+		  <CodeExample>{`
+<Spinner thickness={3} />
+			`}</CodeExample>
+		  <Spinner thickness={3} />
+
+		  <CodeExample>{`
+<Spinner thickness={4} />
+			`}</CodeExample>
+		  <Spinner thickness={4} />
+
+
+		  <CodeExample>{`
+<Spinner thickness={5} />
+			`}</CodeExample>
+		  <Spinner thickness={5} />
+
+		  <CodeExample>{`
+<Spinner thickness={6} />
+			`}</CodeExample>
+		  <Spinner thickness={6} />
+		</section>
   ))
-  .add('thickness', () => (
-		<div>
-		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={1} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={1} />
+  .add('prop: gap', () => (
+		<section>
+		  <h2><code>gap</code></h2>
+			<p><code>gap</code> sets the space between the broken ends of the circle.</p>
+			<p>This <strong>does not</strong> map to any absolute value. And varies wildly based on <code>thickness</code>.</p>
 
 		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={2} />
+<Spinner gap={1} />
 			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={2} />
+		  <Spinner gap={1} />
 
 		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={3} />
+<Spinner gap={2} />
 			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={3} />
+		  <Spinner gap={2} />
 
 		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={4} />
+<Spinner gap={3} />
 			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={4} />
+		  <Spinner gap={3} />
 
 		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={5} />
+<Spinner gap={4} />
 			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={5} />
+		  <Spinner gap={4} />
 
 		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={6} />
+<Spinner gap={5} />
 			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={6} />
-
-		  <CodeExample>{`
-<Spinner height="64" width="64" thickness={7} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" thickness={7} />
-		</div>
+		  <Spinner gap={5} />
+		</section>
   ))
-  .add('gap', () => (
-		<div>
-		  <CodeExample>{`
-<Spinner height="64" width="64" gap={1} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" gap={1} />
+  .add('prop: speed', () => (
+		<section>
+		  <h2><code>speed</code></h2>
+			<p><code>speed</code> sets the animation speed.</p>
+			<p>There are three speeds <code>fast</code>, <code>slow</code>, and the default.</p>
 
-		  <CodeExample>{`
-<Spinner height="64" width="64" gap={2} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" gap={2} />
-
-		  <CodeExample>{`
-<Spinner height="64" width="64" gap={3} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" gap={3} />
-
-		  <CodeExample>{`
-<Spinner height="64" width="64" gap={4} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" gap={4} />
-
-		  <CodeExample>{`
-<Spinner height="64" width="64" gap={5} />
-			`}</CodeExample>
-		  <Spinner height="64" width="64" gap={5} />
-		</div>
-  ))
-  .add('set animation speed', () => (
-		<div>
 		  <CodeExample>{`
 <Spinner speed="fast" />
 			`}</CodeExample>
 
-		  <Spinner
-			  height="64"
-			  width="64"
-				speed="fast"
-			/>
+		  <Spinner speed="fast" />
 
 		  <CodeExample>{`
 <Spinner speed="slow" />
 			`}</CodeExample>
 
-		  <Spinner
-			  height="64"
-			  width="64"
-				speed="slow"
-			/>
-		</div>
+		  <Spinner speed="slow" />
+		</section>
   ))

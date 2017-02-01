@@ -11,9 +11,12 @@ const Spinner = ({
   speed,
   gap,
   thickness,
+	size,
   ...props,
 }) =>
   <svg
+		height={size}
+		width={size}
     {...props}
 		style={{animationDuration: `${speedSwitch(speed)}ms`}}
     className="__react-svg-spinner_circle"
@@ -43,20 +46,22 @@ const Spinner = ({
       stroke={color}
       fill="none"
       strokeWidth={thickness}
-      strokeDasharray={Math.PI * 2 * (10 - gap + (thickness / 2))}
+      strokeDasharray={Math.PI * 2 * (11 - gap)}
       strokeLinecap="round"
     />
   </svg>
 Spinner.propTypes = {
   color: React.PropTypes.string,
   thickness: React.PropTypes.oneOf([1,2,3,4,5,6,7,8]).isRequired,
-  gap: React.PropTypes.oneOf([1,2,3,4]).isRequired,
+  gap: React.PropTypes.oneOf([1,2,3,4,5]).isRequired,
   speed: React.PropTypes.oneOf(["fast", "slow"]),
+  size: React.PropTypes.string.isRequired,
 }
 Spinner.defaultProps = {
   color: "rgba(0,0,0,0.4)",
   gap: 4,
   thickness: 4,
+  size: "1em",
 }
 
 module.exports = Spinner
