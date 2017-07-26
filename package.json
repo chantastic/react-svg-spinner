@@ -1,6 +1,6 @@
 {
   "name": "react-svg-spinner",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An SVG spinner component.",
   "main": "lib/index.js",
   "scripts": {
