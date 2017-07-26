@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 function speedSwitch(speed) {
 	if (speed === "fast") return 600
@@ -51,11 +52,11 @@ const Spinner = ({
     />
   </svg>
 Spinner.propTypes = {
-  color: React.PropTypes.string,
-  thickness: React.PropTypes.oneOf([1,2,3,4,5,6,7,8]).isRequired,
-  gap: React.PropTypes.oneOf([1,2,3,4,5]).isRequired,
-  speed: React.PropTypes.oneOf(["fast", "slow"]),
-  size: React.PropTypes.string.isRequired,
+  color: PropTypes.string,
+  thickness: PropTypes.oneOf([1,2,3,4,5,6,7,8]).isRequired,
+  gap: PropTypes.oneOf([1,2,3,4,5]).isRequired,
+  speed: PropTypes.oneOf(["fast", "slow"]),
+  size: PropTypes.string.isRequired,
 }
 Spinner.defaultProps = {
   color: "rgba(0,0,0,0.4)",
