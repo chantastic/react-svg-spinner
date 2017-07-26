@@ -34,5 +34,5 @@ ReactDom.render(
 
 ## CHANGELOG
 
-## 0.1.0
+## 0.2.0
 [chore]: update to use `prop-types`. thanks [@shanebonham](https://github.com/shanebonham)
