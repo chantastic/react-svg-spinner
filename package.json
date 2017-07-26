@@ -25,6 +25,7 @@
     "babel-preset-react": "^6.22.0",
     "enzyme": "^2.7.1",
     "jest": "^18.1.0",
+    "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
