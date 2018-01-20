@@ -12,9 +12,9 @@
   "author": "Michael Chan @chantastic",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^2.2.1"
+    "react": "^15.4.2",
+    "prop-types": "^15.5.10"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
     "babel-jest": "^18.0.0",
@@ -25,10 +25,9 @@
     "babel-preset-react": "^6.22.0",
     "enzyme": "^2.7.1",
     "jest": "^18.1.0",
-    "prop-types": "^15.5.10",
-    "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-test-renderer": "^15.4.2"
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^2.2.1"
   }
 }
