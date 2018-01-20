@@ -12,8 +12,9 @@
   "author": "Michael Chan @chantastic",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.4.2",
-    "prop-types": "^15.5.10"
+    "npm-check-updates": "^2.14.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.4.2"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
