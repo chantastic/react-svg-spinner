@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.4.2"
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
@@ -26,8 +26,8 @@
     "enzyme": "^2.7.1",
     "jest": "^22.4.2",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-test-renderer": "^15.4.2",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
     "webpack": "^2.2.1"
   }
 }
