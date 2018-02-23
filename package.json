@@ -2,12 +2,17 @@
   "name": "react-svg-spinner",
   "version": "0.3.0",
   "description": "An SVG spinner component.",
-  "source": "index.js",
+  "source": "tmp/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "browser": "dist/index.umd.js",
   "scripts": {
     "test": "jest",
     "prepublish": "webpack",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "build-storybook": "build-storybook -c .storybook -o docs",
+    "babel": "./node_modules/.bin/babel -d tmp index.js",
+    "build": "npm run -s babel && microbundle"
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
@@ -17,6 +22,8 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
@@ -25,6 +32,7 @@
     "babel-preset-react": "^6.22.0",
     "enzyme": "^3.3.0",
     "jest": "^22.4.2",
+    "microbundle": "^0.4.4",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
