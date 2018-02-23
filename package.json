@@ -2,7 +2,7 @@
   "name": "react-svg-spinner",
   "version": "0.3.0",
   "description": "An SVG spinner component.",
-  "main": "lib/index.js",
+  "source": "index.js",
   "scripts": {
     "test": "jest",
     "prepublish": "webpack",
