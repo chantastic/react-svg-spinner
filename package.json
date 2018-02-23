@@ -2,6 +2,14 @@
   "name": "react-svg-spinner",
   "version": "0.3.0-0",
   "description": "An SVG spinner component.",
+  "homepage": "https://chantastic.org/react-svg-spinner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chantastic/react-svg-spinner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chantastic/react-svg-spinner/issues"
+  },
   "source": "tmp/index.js",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -16,10 +24,7 @@
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
-  "files": [
-    "dist",
-    "index.js"
-  ],
+  "files": ["dist", "index.js"],
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0"
