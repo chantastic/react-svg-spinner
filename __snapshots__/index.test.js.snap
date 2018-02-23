@@ -1,4 +1,6 @@
-exports[`test no prop snapshot 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no prop snapshot 1`] = `
 <svg
   aria-labelledby="title desc"
   className="__react-svg-spinner_circle"
@@ -10,32 +12,36 @@ exports[`test no prop snapshot 1`] = `
     }
   }
   viewBox="0 0 32 32"
-  width="1em">
+  width="1em"
+>
   <title
-    id="title">
+    id="title"
+  >
     Circle loading spinner
   </title>
   <desc
-    id="desc">
-    Image of a partial circle indicating \"loading.\"
+    id="desc"
+  >
+    Image of a partial circle indicating "loading."
   </desc>
   <style
     dangerouslySetInnerHTML={
       Object {
         "__html": "
-            .__react-svg-spinner_circle{
-                transition-property: transform;
-                animation-name: __react-svg-spinner_infinite-spin;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-            }
-            @keyframes __react-svg-spinner_infinite-spin {
-                from {transform: rotate(0deg)}
-                to {transform: rotate(360deg)}
-            }
-          ",
+      .__react-svg-spinner_circle{
+          transition-property: transform;
+          animation-name: __react-svg-spinner_infinite-spin;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
       }
-    } />
+      @keyframes __react-svg-spinner_infinite-spin {
+          from {transform: rotate(0deg)}
+          to {transform: rotate(360deg)}
+      }
+    ",
+      }
+    }
+  />
   <circle
     cx={16}
     cy={16}
@@ -45,6 +51,7 @@ exports[`test no prop snapshot 1`] = `
     stroke="rgba(0,0,0,0.4)"
     strokeDasharray={43.982297150257104}
     strokeLinecap="round"
-    strokeWidth={4} />
+    strokeWidth={4}
+  />
 </svg>
 `;
