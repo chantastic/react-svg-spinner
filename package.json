@@ -8,7 +8,7 @@
   "browser": "dist/index.umd.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "webpack",
+    "prepublish": "npm run -s babel && microbundle",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "babel": "./node_modules/.bin/babel -d tmp index.js",
@@ -22,7 +22,7 @@
     "react": "^16.2.0"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.35.3",
+    "@storybook/cli": "^3.3.14",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
@@ -37,6 +37,7 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
-    "webpack": "^3.11.0"
+    "@storybook/react": "^3.3.14",
+    "@storybook/addons": "^3.3.14"
   }
 }

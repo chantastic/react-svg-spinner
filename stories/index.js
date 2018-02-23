@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from '../.';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action } from '@storybook/react';
 
 const Section = props =>
   <section
