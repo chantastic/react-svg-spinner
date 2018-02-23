@@ -16,6 +16,10 @@
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
+  "files": [
+    "dist",
+    "index.js"
+  ],
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0"
