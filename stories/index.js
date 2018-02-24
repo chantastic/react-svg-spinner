@@ -30,6 +30,12 @@ const CodeExample = ({ children, ...props }) =>
 storiesOf('Spinner', module)
   .add('install', () => (
 		<Section>
+      <h1>react-svg-spinner</h1>
+			<p>An SVG spinner component</p>
+			<p>
+				<a href="https://github.com/chantastic/react-svg-spinner">Source on Github</a>
+			</p>
+
 		  <h2>install</h2>
 			<p>There is a `commonjs` bundle and a `umd` for convenience.</p>
 
