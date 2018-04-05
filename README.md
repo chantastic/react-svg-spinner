@@ -17,7 +17,7 @@ import Spinner from "react-svg-spinner";
 
 ## Use in the browser
 ```html
-<script src="https://unpkg.com/react-svg-spinner@1.0.0"></script>
+<script src="https://unpkg.com/react-svg-spinner@1.0.1"></script>
 ```
 
 ## Use
@@ -30,6 +30,10 @@ ReactDom.render(
 ```
 
 ## CHANGELOG
+
+## 1.0.1
+
+[chore]: loosen React version constraints #4
 
 ## 1.0.0
 [chore]: Update dependencies—namely `React@v16`
