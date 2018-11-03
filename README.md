@@ -17,7 +17,7 @@ import Spinner from "react-svg-spinner";
 
 ## Use in the browser
 ```html
-<script src="https://unpkg.com/react-svg-spinner@1.0.1/dist/index.umd.js"></script>
+<script src="https://unpkg.com/react-svg-spinner@1.0.2/dist/index.umd.js"></script>
 ```
 
 ## Use
@@ -30,6 +30,10 @@ ReactDom.render(
 ```
 
 ## CHANGELOG
+
+## 1.0.1
+
+[chore]: remove yarn.lock. upgrade with npm
 
 ## 1.0.1
 
