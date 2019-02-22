@@ -29,12 +29,12 @@
     "index.js"
   ],
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": ">= 15 < 17"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3"
   },
   "devDependencies": {
     "@storybook/addons": "^3.3.14",
-    "@storybook/cli": "^4.0.2",
+    "@storybook/cli": "^4.1.13",
     "@storybook/react": "^3.3.14",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -44,12 +44,12 @@
     "babel-polyfill": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "jest": "^22.4.2",
     "microbundle": "^0.4.4",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^16.2.0",
-    "react-test-renderer": "^16.2.0"
+    "react-dom": "^16.8.3",
+    "react-test-renderer": "^16.8.3"
   }
 }
