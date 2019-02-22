@@ -47,7 +47,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "jest": "^22.4.2",
-    "microbundle": "^0.4.4",
+    "microbundle": "^0.10.0",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.8.3",
     "react-test-renderer": "^16.8.3"
