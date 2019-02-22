@@ -10,17 +10,17 @@
   "bugs": {
     "url": "https://github.com/chantastic/react-svg-spinner/issues"
   },
-  "source": "tmp/index.js",
   "main": "dist/index.js",
-  "module": "dist/index.m.js",
-  "browser": "dist/index.umd.js",
+  "umd:main": "dist/foo.umd.js",
+  "module": "dist/foo.mjs",
+  "source": "index.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "npm run -s babel && microbundle",
+    "prepublish": "microbundle",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "babel": "./node_modules/.bin/babel -d tmp index.js",
-    "build": "npm run -s babel && microbundle"
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement"
   },
   "author": "Michael Chan @chantastic",
   "license": "MIT",
@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.3"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "@storybook/addons": "^3.3.14",
