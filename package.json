@@ -16,7 +16,7 @@
   "source": "index.js",
   "scripts": {
     "test": "jest",
-    "prepublish": "microbundle",
+    "prepublish": "npm run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "build": "microbundle --jsx React.createElement",
