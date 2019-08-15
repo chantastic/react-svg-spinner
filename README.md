@@ -48,3 +48,8 @@ ReactDom.render(
 
 ## 0.2.0
 [chore]: update to use `prop-types`. thanks [@shanebonham](https://github.com/shanebonham)
+
+## LICENSE
+
+MIT, Michael Chan
+See [LICENSE](./LICENSE)
