@@ -11,7 +11,7 @@
     "url": "https://github.com/chantastic/react-svg-spinner/issues"
   },
   "main": "dist/index.js",
-  "umd:main": "dist/foo.umd.js",
+  "unpkg": "dist/foo.umd.js",
   "module": "dist/foo.mjs",
   "source": "index.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "jest": "^25.0.0",
-    "microbundle": "^0.10.1",
+    "microbundle": "^0.11.0",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.12.0"
