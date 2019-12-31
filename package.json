@@ -10,15 +10,15 @@
   "bugs": {
     "url": "https://github.com/chantastic/react-svg-spinner/issues"
   },
-  "main": "dist/index.js",
-  "unpkg": "dist/foo.umd.js",
-  "module": "dist/foo.mjs",
+  "main": "dist/react-svg-spinner.js",
+  "unpkg": "dist/react-svg-spinner.umd.js",
+  "module": "dist/react-svg-spinner.mjs",
   "source": "index.js",
   "scripts": {
     "test": "jest",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "build": "microbundle --jsx React.createElement",
     "dev": "microbundle watch --jsx React.createElement"
   },
@@ -32,24 +32,24 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0"
   },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "prop-types": "^15.0.0"
+  },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
     "@storybook/cli": "^5.2.8",
     "@storybook/react": "^5.2.8",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
     "babel-jest": "^25.0.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-object-rest-spread": "^6.22.0",
-    "babel-polyfill": "^6.22.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
+    "babel-loader": "^8.0.6",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "jest": "^25.0.0",
     "microbundle": "^0.11.0",
-    "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.12.0",
-    "react-test-renderer": "^16.12.0"
+    "rollup-plugin-typescript": "^1.0.1"
   }
 }
