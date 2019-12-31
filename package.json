@@ -28,6 +28,7 @@
     "dist",
     "index.js"
   ],
+  "types": "./index.d.ts",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.12.0"
