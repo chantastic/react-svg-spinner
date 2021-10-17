@@ -7,8 +7,9 @@ function speedSwitch(speed) {
   return 750;
 }
 
-const Spinner = ({ color, speed, gap, thickness, size, ...props }) => (
+const Spinner = ({ color, speed, gap, thickness, size, title, titleId, svgId, ...props }) => (
   <svg
+    id={svgId}
     height={size}
     width={size}
     {...props}
@@ -18,8 +19,8 @@ const Spinner = ({ color, speed, gap, thickness, size, ...props }) => (
     aria-labelledby="title desc"
     viewBox="0 0 32 32"
   >
-    <title id="title">Circle loading spinner</title>
-    <desc id="desc">Image of a partial circle indicating "loading."</desc>
+    <title id={titleId}>{title}}</title>
+    <desc id={descId}>{desc}</desc>
     <style
       dangerouslySetInnerHTML={{
         __html: `
@@ -50,17 +51,27 @@ const Spinner = ({ color, speed, gap, thickness, size, ...props }) => (
   </svg>
 );
 Spinner.propTypes = {
+  svgId: PropTypes.string.isRequired,
   color: PropTypes.string,
   thickness: PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8]).isRequired,
   gap: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
   speed: PropTypes.oneOf(["fast", "slow"]),
-  size: PropTypes.string.isRequired
+  size: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  titleId: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  descId: PropTypes.string.isRequired
 };
 Spinner.defaultProps = {
+  svgId: "react-svg-spinner",
   color: "rgba(0,0,0,0.4)",
   gap: 4,
   thickness: 4,
-  size: "1em"
+  size: "1em",
+  title: "Circle loading spinner",
+  titleId: "title",
+  desc: "Image of a partial circle indicating \"loading.\"",
+  descId: "desc"
 };
 
 export default Spinner;

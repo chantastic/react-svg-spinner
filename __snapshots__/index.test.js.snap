@@ -2,6 +2,7 @@
 
 exports[`no prop snapshot 1`] = `
 <svg
+  id="react-svg-spinner"
   aria-labelledby="title desc"
   className="__react-svg-spinner_circle"
   height="1em"
